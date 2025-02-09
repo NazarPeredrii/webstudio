@@ -7,6 +7,7 @@
 --timbegraund-color:#F5F4FA;
 --footerbedraund-color:#2F303A;
 --footernamber-color:rgba(255, 255, 255, 0.60);
+--border-line: #EEE;
 }
 
 
@@ -147,7 +148,7 @@ padding-bottom: 94px;
 
 .services-list{
     display: flex;
-    justify-content: center;
+gap: 30px;
 }
 
 
@@ -158,8 +159,12 @@ font-style: normal;
 font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.42px;
+margin-bottom: 10px ;
 text-transform: uppercase;
 }
+
+
+
 .services-desk{
     color: var(--addtekst-color);
 font-size: 14px;
@@ -183,7 +188,8 @@ font-style: normal;
 font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
-padding-bottom: 50px;
+margin-bottom: 50px;
+
 }
 
 
@@ -334,7 +340,43 @@ letter-spacing: 0.42px;
 
 
 
+.batton-list{
+display: flex;
+justify-content: center;
+gap: 8px;
+margin-bottom: 50px;
 
+}
+
+
+.services-item::before{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../photos/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.services-item:nth-child(2)::before{
+    background-image: url(../photos/clock.png);
+}
+
+
+.services-item:nth-child(3)::before{
+    background-image: url(../photos/diagram.png);
+
+}
+
+.services-item:nth-child(4)::before{
+    background-image: url(../photos/astronaut.png);
+}
 
 .batton-btn{
     color: var(--tekst-color);
@@ -345,6 +387,8 @@ line-height: 1.62; /* 162.5% */
 letter-spacing: 0.48px;
 border-radius: 4px;
 background: var(--timbegraund-color);
+padding: 6px 25px;
+border: none;
 }
 
 
@@ -363,12 +407,36 @@ background: var(--timbegraund-color);
     padding-bottom: 94px;
 }
 
+
+.card-list{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    outline: 1px solid var(--border-line);
+    flex-basis: calc((100% - 60px) / 3);
+
+    
+}
+.card-img{
+    width: 100%;
+    
+}
+
+.card-box{
+    padding: 20px 24px;
+
+}
+
 .card-titel{
     color: var(--tekst-color);
 font-size: 18px;
 font-weight: 700;
 line-height: 2; /* 200% */
 letter-spacing: 1.08px;
+margin-bottom: 4px;;
 }
 
 
